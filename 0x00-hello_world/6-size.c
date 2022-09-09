@@ -1,22 +1,20 @@
 include <stdio.h>
+
 /**
- * main - print the string of the output function
- * Description: using the main function
- * this must print "Programming is like building a multilingual puzzle
- * Return: 0
+ * main - Entry point
+ * 
+ * Description: prints the size of various data type
+ *
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	char c;
-	int i;
-	long li;
-	long long lli;
-	float f;
-
-	printf("Size of a char: %d byte(s)\n", sizeof(c));
-	printf("Size of an int: %d byte(s)\n", sizeof(i));
-	printf("Size of a long int: %d byte(s)\n", sizeof(li));
-	printf("Size of a long long int: %d byte(s)\n", sizeof(lli));
-	prinf("Size of a float: %d byte(s)\n",sizeof(f));
-	return(0);
+	printf("Size of a char: %d byte(s)\n", (int)sizeof(char));
+	printf("Size of an int: %d byte(s)\n",(int)sizeof(int));
+	printf("Size of a long int: %d byte(s)\n",(int)sizeof(long int));
+	printf("Size of a long long int: %d byte(s)\n",(int)sizeof(long long int));
+	printf("Size of a float: %d byte(s)\n",(int)sizeof(float));
+	return (0);
+	
 }
