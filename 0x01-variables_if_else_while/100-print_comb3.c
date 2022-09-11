@@ -3,7 +3,7 @@
 /**
  * main - print single digit numbers starting from 0
  *
- * Reeturn:  Always (Success);
+ * Return: Always (Success);
  */
 int main(void)
 {
