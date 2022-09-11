@@ -3,34 +3,32 @@
 /**
  * main - print single digit numbers starting from 0
  *
- * Return: returns zero at the end
+ * Reeturn:  Always (Success);
  */
 int main(void)
 {
-	int i, j;
+	int c = 0;
+	int f_d;
+	int l_d;
 
-	for (i = 0; i <= 9; i++)
-
+	while (c <= 99)
 	{
-		for (j = 1; j <= 9; j++)
+		f_d = (c / 10 + '0');
+		l_d = (c % 10 + '0');
 
+		if (f_d < l_d)
 		{
-			putchar(i + '0');
+			putchar(f_d);
+			putchar(l_d);
 
-			putchar(j + '0');
-
-			if (i != 8)
-			
+			if (c != 89)
 			{
 				putchar(',');
 				putchar(' ');
-
 			}
-
 		}
-
+		c++;
 	}
-
-	putchar('\n');
-	return (0);
+putchar('\n');
+return (0);
 }
