@@ -1,27 +1,24 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * main - prints a hexadecimal string
  *
  * Return: 0 (Success)
  */
 int main(void)
 {
-
 	char c;
 
-	for (c = '0'; c <= '9'; c++)
+	for  (c = '0'; c <= '9'; c++)
 	{
 		putchar(c);
-	
 	}
 
 	for (c = 'a'; c <= 'f'; c++)
 	{
 		putchar(c);
-
 	}
 
-	putchar('\n')
+	putchar('\n');
 
 	return (0);
 }
