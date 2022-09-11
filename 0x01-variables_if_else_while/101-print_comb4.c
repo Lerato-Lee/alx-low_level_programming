@@ -3,6 +3,7 @@
  * main - program that prints all possible different combinations of 3 digits
  * Return: Always (Success);
  */
+int main(void)
 {
 	int c = 0;
 	int f_d;
