@@ -3,7 +3,7 @@
 /**
  * main - print single digit numbers starting from 0
  *
- * Return: Always (Success);
+ * Return: returns zero at the end
  */
 int main(void)
 
@@ -28,7 +28,7 @@ int main(void)
 
 				putchar(',');
 
-				putchar('');
+				putchar(' ');
 			}
 
 		}
