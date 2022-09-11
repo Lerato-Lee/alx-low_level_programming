@@ -2,8 +2,8 @@
 #include <unistd.h>
 /**
  * main- print quote
- * Descrition: prints Dora's quote
- * Return: Always 1 (Success)
+ * Description: prints Dora's quote
+ * Return: Always 1 (Success);
  */
 int main(void)
 {
