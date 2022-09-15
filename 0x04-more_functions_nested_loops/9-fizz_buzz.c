@@ -1,33 +1,46 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
- * print_square - prints squares
- * @size: parameter
- * Return: returns nothing
+ * main - program that prints either number
+ * or fizz or buzz or fizzBuzz
+ *
+ * Return: returns 0
  */
 
-void print_square(int size)
+int main(void)
 {
-	int inc1, inc2;
 
-	if (size > 0)
+	int num = 1;
+
+	while (num++ < 100)
 	{
-		for (inc1 = 0; inc1 < size; inc1++)
+		if ((num % 3 == 0) && (num % 5 == 0))
 		{
-			for (inc2 = 0; inc2 < (size - 1); inc2++)
+			printf("FizzBuzz ");
+		}
+		else if ((num % 3) == 0)
+		{
+			printf("Fizz ");
+		}
+		else if ((num % 5) == 0)
+		{
+			if (num != 100)
 			{
-				putchar('#');
+				printf("Buzz ");
+			}
+			else
+			{
+				printf("Buzz");
 			}
 
-			putchar('#');
-			putchar('\n');
 		}
+		else
+		{
+			printf("%d ", num);
+		}
+	}
+	printf("\n");
 
-	}
-	else
-	{
-		putchar('\n');
-	}
+	return (0);
 
 }
