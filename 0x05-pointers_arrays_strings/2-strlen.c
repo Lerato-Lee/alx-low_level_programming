@@ -6,12 +6,13 @@
  * Return: The length of a string;
  */
 
-int _strlen(char *s);
+int main(void)
 {
-	int len - 0;
+	char *s;
+	int len;
 
-	while (*(s + len) != '\0')
-		len++;
-
-	return(len);
+	str = *s;
+	length = _strlen(str);
+	printf("%d\n", len);
+	return (len);
 }
