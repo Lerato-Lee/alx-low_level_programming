@@ -1,22 +1,39 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- * _puts - prints a string
- * @str: string to print
- *
- * Description: prints a string
- * On success: returns no error
+ * _strcmp - Function which compare two strings and
+ * @s1: first string
+ * @s2:second string
+ * Return: returns zero if s1 == s2
+ *         returns negative number if s1 < s2
+ *         returns positive number if s1 > s2
  */
 
-void _puts(char *str)
+int _strcmp(char *s1, char *s2)
 {
-	int i = 0;
+	int i = 0, diff = 0;
 
-	while (*(str + i) != '\0')
+	while (1)
 	{
-		putchar(*(str + i));
-		i++;
+		if (s1[i] == '\0' && s2[i] == '\0')
+			break;
+		else if (s1[i] == '\0')
+		{
+			diff = s2[i];
+			break;
+		}
+		else if (s2[i] == '\0')
+		{
+			diff = s1[i];
+			break;
+		}
+		else if (s1[i] != s2[i])
+		{
+			diff = s1[i] - s2[i];
+			break;
+		}
+		else
+			i++;
 	}
-	putchar(10);
+	return (diff);
 }
