@@ -2,7 +2,6 @@
 #define MAIN_H
 #include <stdio.h>
 /**
- * Description - includes all prototypes
  * char prototypes()
  * int prototypes()
  * void prototypes()
