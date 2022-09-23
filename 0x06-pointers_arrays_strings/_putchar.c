@@ -1,21 +1,12 @@
-#include "main.h"
+#include <unistd.h>
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * _putchar - writes the character c to std out.
+ * @c: the character to print
+ * Return: 1 on success.
+ * on error, -1
  */
-int main(void)
+int _putchar(char c)
 {
-	print_number(98);
-	_putchar('\n');
-	print_number(402);
-	_putchar('\n');
-	print_number(1024);
-	_putchar('\n');
-	print_number(0);
-	_putchar('\n');
-	print_number(-98);
-	_putchar('\n');
-	return (0);
+	return (write(1, &c, 1));
 }
