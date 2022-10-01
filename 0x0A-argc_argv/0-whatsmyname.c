@@ -3,8 +3,9 @@
 /**
  * main - prints the name of the program
  * @argc: number of arguments passed to the function
- * argv: argument vector of pointers to string
- * Return: always 0
+ * @argv: argument vector of pointers to strings
+ *
+ * Return: Always 0
  */
 int main(int argc __attribute__((unused)), char *argv[])
 {
