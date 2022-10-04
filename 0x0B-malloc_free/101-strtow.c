@@ -77,7 +77,7 @@ char **strtow(char *str)
 						split[j][temp] = str[(i - size) + temp];
 						temp++;
 					}
-					split[j][temp] = = '\0';
+					split[j][temp] == '\0';
 					size = temp = 0;
 					j++;
 				}
