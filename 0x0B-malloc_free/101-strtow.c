@@ -34,7 +34,7 @@ int num_words(char *str)
 		{
 			i++;
 		}
-		else if (((str[i] == ' ') || (str[i] == '\0')) && (str[i - 1] != ' '))
+		else if (((str[i] == ' ') || (str[i] == '\0')) && i && (str[i - 1] != ' '))
 		{
 			words += 1;
 			i++;
@@ -46,6 +46,7 @@ int num_words(char *str)
 	}
 	return (words);
 }
+
 /**
  * strtow - splits a string into words
  * @str: string to be splitted
@@ -58,12 +59,12 @@ char **strtow(char *str)
 	char **split;
 	int i, j = 0, temp = 0, size = 0, words = num_words(str);
 
-	if(words == 0)
+	if (words == 0)
 		return (NULL);
 	split = (char **)malloc(sizeof(char *) * (words + 1));
 	if (split != NULL)
 	{
-		for (i = 0; i<= len(str) && words; i++)
+		for (i = 0; i <= len(str) && words; i++)
 		{
 			if ((str[i] != ' ') && (str[i] != '\0'))
 				size++;
