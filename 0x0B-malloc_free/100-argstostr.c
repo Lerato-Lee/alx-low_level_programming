@@ -7,7 +7,7 @@
  */
 int len(char *str)
 {
-	int len = 0
+	int len = 0;
 
 	if (str != NULL)
 	{
@@ -34,7 +34,7 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 
 	while (ac--)
-		sum += (len(ac[ac]) + 1);
+		sum += (len(av[ac]) + 1);
 
 	if (new_string != NULL)
 	{
