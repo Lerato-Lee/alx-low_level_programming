@@ -30,6 +30,7 @@ void print_opcodes(char *a, int n)
 int main(int argc, char **argv)
 {
 	int n;
+
 	if (argc != 2)
 	{
 		printf("Error\n");
