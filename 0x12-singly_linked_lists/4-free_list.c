@@ -2,8 +2,8 @@
 #include "lists.h"
 
 /**
- * free_list - frees a list_t list
- * @head: pointer to the start of the list
+ * free_list - frees a linked list
+ * @head: pointer to the first node of linked list
  *
  * Return: Nothing
  */
